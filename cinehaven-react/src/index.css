@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400|Nunito:400");
+@import url("https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --background-color-dark: #221f1f;
+  --background-color-green: #191c17;
+  --background-color-light: #f3f5f7;
+  --font-heading: "Poppins";
+  --font-body: "Nunito";
+  --font-brand: "Monsieur La Doulaise";
+  --text-light: #f3f5f7;
+  --text-dark: #090b0d;
+  --breakpoint-xs: 480px;
+  --color-dark-bg: #221f1f;
+  --background-image-hero: url("img/table.jpg");
+  --background-image-testimony: url("img/testimony.jpg");
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--light-bg)] p-0 m-0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply max-w-4xl text-center font-bold leading-tight tracking-[-1%] text-(--text-light) font-heading;
+  }
+
+  a,
+  p,
+  button {
+    @apply text-(--text-light) font-body text-[min(3vw,1rem)] lg:text-[1.25rem];
+  }
+
+  h1 {
+    @apply text-[min(10vw,4.21rem)];
+  }
+
+  h2 {
+    @apply text-[min(10vw,3.158rem)];
+  }
+
+  h3 {
+    @apply text-[min(6vw,2.369rem)];
+  }
+
+  h4 {
+    @apply text-[min(5vw,1.777rem)];
+  }
+
+  h5 {
+    @apply text-[min(4vw,1.333rem)];
+  }
+
+  small {
+    @apply text-(--text-light) font-body text-[min(3vw,.75rem)] lg:text-[1rem] opacity-80;
+  }
+
+  main {
+    @apply min-h-screen relative;
+  }
+
+  header {
+    @apply flex items-center justify-around px-4 pt-4 w-screen absolute mb-4;
+  }
+
+  header nav {
+    @apply md:flex gap-8 lg:gap-16 xl:gap-24;
+  }
+
+  .container {
+    @apply flex flex-row justify-center items-center;
+  }
+}
+
+@layer components {
+  .hero {
+    @apply bg-hero bg-dark-bg bg-blend-soft-light h-screen w-screen bg-center bg-cover z-0 flex flex-col justify-center items-center gap-2;
+
+    & h1 {
+      @apply font-brand lg:text-[min(10vw,160px)] font-light;
+    }
+
+    & h5 {
+      @apply md:text-[min(10vw,1.5rem)];
+    }
+    & small {
+      @apply text-center;
+    }
+  }
+
+  .short-description {
+    @apply max-w-[80%] sm:max-w-[70%] md:max-w-[60%] xl:max-w-[40%] lg:max-w-[50%] m-auto my-20 flex flex-col gap-4;
+
+    h5,
+    small,
+    a {
+      @apply text-[var(--text-dark)] max-w-[90%] m-auto;
+    }
+
+    a {
+      @apply mt-8 cursor-pointer hover:opacity-60 transition-opacity duration-400 ease-in-out  underline underline-offset-8 decoration-1 decoration-[var(--text-dark)];
+    }
+  }
+
+  .testimony {
+    @apply bg-testimony h-[50vh] w-screen bg-center bg-cover z-0 flex flex-col justify-center items-end gap-2 px-16;
+
+    .text-container {
+      @apply lg:max-w-[35%];
+    }
+
+    h2 {
+      @apply font-brand mb-4;
+    }
+  }
+
+  .about-me-home {
+    @apply bg-green py-8 md:h-[70vh] w-screen bg-center bg-cover z-0 flex justify-center items-center gap-2;
+
+    .wrapper {
+      @apply flex flex-col md:flex-row gap-8 md:gap-16 max-w-[90%] xs:max-w-[80%] md:max-w-[70%] lg:max-w-[60%] xl:max-w-[50%] items-center justify-center;
+
+      img {
+        @apply object-contain w-48 md:w-64 lg:w-[400px] h-auto;
+      }
+
+      hr {
+        @apply text-(--text-light);
+      }
+
+      .text-wrapper {
+        @apply flex flex-col gap-4 md:gap-8 max-w-[50%];
+      }
+
+      button {
+        @apply bg-light/80 text-(--text-dark) py-1;
+      }
+    }
+  }
+}
