@@ -13,9 +13,9 @@
   --text-dark: #090b0d;
   --breakpoint-xs: 480px;
   --color-dark-bg: #221f1f;
-  --background-image-hero: url("img/table.jpg");
-  --background-image-testimony: url("img/testimony.jpg");
-  --background-image-connect: url("img/invitation.jpg");
+  --background-image-hero: url("/img/table.jpg");
+  --background-image-testimony: url("/img/testimony.jpg");
+  --background-image-connect: url("/img/invitation.jpg");
   --animate-scroll: scroll 75s linear infinite;
   --animate-bg-scroll: bg-scroll linear infinite;
 
