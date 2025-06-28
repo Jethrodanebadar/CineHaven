@@ -6,7 +6,9 @@ const Header = () => {
   return (
     <>
       <header>
-        <img src="img/Icon_2025.png" alt="icon" />
+        <NavLink to="/" className="logo-img">
+          <img src="img/Icon_2025.png" alt="icon" />
+        </NavLink>
         <nav>
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about">About</NavLink>
@@ -39,9 +41,9 @@ const Header = () => {
         </button>
         {isOpen && (
           <div className="modal">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Experience</a>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/about">About</NavLink>
+            <NavLink to="/experience">Experience</NavLink>
           </div>
         )}
       </header>
