@@ -20,11 +20,10 @@
   --text-dark: #090b0d;
   --breakpoint-xs: 480px;
   --color-dark-bg: #221f1f;
-  --background-image-hero: url("/img/table.jpg");
-  --background-image-testimony: url("/img/testimony.jpg");
-  --background-image-ring: url("/img/ring.jpg");
-  --background-image-connect: url("/img/invitation.jpg");
-  --background-image-couple: url("/img/couple.jpg");
+  --background-image-testimony: url("/img/testimony.webp");
+  --background-image-ring: url("/img/ring.webp");
+  --background-image-connect: url("/img/invitation.webp");
+  --background-image-couple: url("/img/couple.webp");
   --animate-scroll: scroll 30s linear infinite;
   --animate-bg-scroll: bg-scroll linear infinite;
 
@@ -147,7 +146,7 @@
 @layer components {
   /* Home page Components */
   .home-hero {
-    @apply bg-hero  bg-dark-bg bg-blend-soft-light h-screen w-screen bg-center bg-cover z-0 flex flex-col justify-center items-center gap-2;
+    @apply bg-dark-bg h-screen w-screen bg-center bg-cover z-0 flex flex-col justify-center items-center gap-2;
 
     & img {
       @apply md:max-w-[clamp(300px,80%,1200px)];

@@ -34,7 +34,7 @@ const about = () => {
         <div className="about-me-container">
           <h2>More Things About Me</h2>
           <div className="wrapper">
-            <img src="/img/kuyanics.jpg" alt="" />
+            <img src="/img/kuyanics.webp" alt="" />
             <div className="text-container">
               <h3>NICOLAS DEL ROSARIO</h3>
               <h6>FOUNDER, FILMMAKER</h6>

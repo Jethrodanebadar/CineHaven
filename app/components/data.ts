@@ -11,23 +11,23 @@ type Films = {
 const imageData: Image[] = [
   {
     title: "flowers",
-    url: "/img/flowers.jpg",
+    url: "/img/flowers.webp",
   },
   {
     title: "heart",
-    url: "/img/heart.jpg",
+    url: "/img/heart.webp",
   },
   {
     title: "invitation",
-    url: "/img/invitation.jpg",
+    url: "/img/invitation.webp",
   },
   {
     title: "table",
-    url: "/img/table.jpg",
+    url: "/img/table.webp",
   },
   {
     title: "testimony",
-    url: "/img/testimony.jpg",
+    url: "/img/testimony.webp",
   },
 ];
 

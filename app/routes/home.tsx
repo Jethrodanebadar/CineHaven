@@ -20,12 +20,31 @@ const Home = () => {
   };
   return (
     <main>
-      <div className="home-hero">
-        <img src="/img/CinveHaven_Logo_2025.png" alt="brand" />
+      <div className="home-hero relative w-full h-screen overflow-hidden">
+        <video
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          src="/vid/herobg30.mp4"
+          poster="/img/fallback.webp"
+          preload="auto"
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
+
+        <div className="absolute bg-black/50 top-0 left-0 w-full h-full bg-blend-soft-light"></div>
+        <div className="relative z-10 flex flex-col justify-center items-center h-full gap-2 px-4">
+          <img
+            src="/img/CineHaven_Logo_2025.webp"
+            alt="brand"
+            className="md:max-w-[clamp(300px,80%,1200px)]"
+          />
+        </div>
       </div>
+
       <div className="short-description">
         <h4>Where Every Frame Tells a Love Story.</h4>
-        <img src="/img/heart.jpg" alt="heart image" loading="lazy" />
+        <img src="/img/heart.webp" alt="heart image" loading="lazy" />
         <small>
           At Cinehaven, we believe every love story deserves to be told with
           cinematic beauty and heartfelt authenticity. Through timeless
@@ -60,7 +79,7 @@ const Home = () => {
       </div>
       <div className="about-me-home">
         <div className="wrapper">
-          <img src="/img/kuyanics.jpg" alt="" loading="lazy" />
+          <img src="/img/kuyanics.webp" alt="" loading="lazy" />
           <div className="text-wrapper">
             <h4>NICOLAS DEL ROSARIO</h4>
             <small>
