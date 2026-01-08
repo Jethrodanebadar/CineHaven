@@ -9,7 +9,7 @@ const Footer = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
           <h5>Forever starts with a perfect shot.</h5>
         </div>
         <p>
-          Phone Number: <span className="font-bold">09204787850</span>
+          Phone Number: <span className="font-bold">09565634361</span>
         </p>
         <p>Studio Service: CALABARZON</p>
         <div className="social-icons">
