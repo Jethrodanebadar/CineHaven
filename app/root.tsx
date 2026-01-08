@@ -11,6 +11,7 @@ import type { Route } from "./+types/root";
 import "./app.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
+import ReactLenis from "lenis/react";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -45,11 +46,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   return (
-    <>
+    <ReactLenis root className="relative w-screen min-h-screen">
       <Header />
       <Outlet />
       <Footer />
-    </>
+    </ReactLenis>
   );
 }
 
